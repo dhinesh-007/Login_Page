@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="icon/x-image" href="./asserts/password.png">
+</head>
+<body>
+    <div class="loginForm">
+        <h1>Welcome back!</h1>
+        <form>
+            <div class="input">
+                <input type="email" class="form-input" id="email" placeholder=" " autocomplete="off" required>
+                <label for="email">Enter email</label>
+            </div>
+            <div class="input">
+                <input type="password" class="form-input" id="password" placeholder=" " autocomplete="off" required>
+                <label for="password">Enter password</label>
+                <img id="eye" src="./asserts/show.svg" onclick="togglePassword()" alt="/" width="25">
+            </div>
+            <button type="submit" id="login-btn">Login</button>
+        </form>
+        <div class="belowLoginBtn">
+            <div>
+                <a href="#"><p id="Fp">Forgot Password?</p></a>
+            </div>
+            <div>
+                <p>Don't have an account?<a href="#"> Sign up</a></p>
+            </div>
+        </div>
+        <div class="LoginOptions">
+            <p>or Sign in with</p>
+           <div class="options">
+                <img src="./asserts/google.png" id="google" alt="/">
+                <img src="./asserts/facebook.png" id="facebook" alt="/">
+                <img src="./asserts/twitter.png" id="twitter" alt="/">
+           </div>
+        </div>
+    </div>
+    <script>
+        let toggle = false;
+        let eye = document.getElementById("eye");
+        let password = document.getElementById("password");
+        function togglePassword(){
+            toggle = !toggle;
+            if(toggle){
+                eye.src = "./asserts/hide.svg";
+                password.type = "text";
+            }
+            else{
+                eye.src = "./asserts/show.svg";
+                password.type = "password";
+            }
+        }
+    </script>
+    
+</body>
+</html>

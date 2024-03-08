@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Smooch Sans", sans-serif;
+}
+
+body{
+  height: 100vh;
+  background-image: url('./asserts/BackgroundImage1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LoginOptions{
+  margin: 35px 0;
+}
+
+.LoginOptions p{
+  margin-bottom: 20px;
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#google, #facebook, #twitter{
+  width: 35px;
+  cursor: pointer;
+}
+
+.loginForm{
+  width: 500px;
+  height: 600px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.belowLoginBtn{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+.input{
+  position: relative;
+  margin: 10% 0;
+}
+
+.input input{
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+  padding: 0 15px;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.input label{
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 60px;
+  font-size: 20px;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+
+.input img{
+  position: absolute;
+  top: 30%;
+  right: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+input:focus{
+  border: 2px solid #55ce69;
+}
+
+.form-input:focus ~ label,
+.form-input:not(:placeholder-shown).form-input:not(:focus) 
+~ label{
+  top: -15px;
+  left: 45px;
+  font-size: 23px;
+  padding: 0 2px;
+}
+
+a{
+  text-decoration: none;
+  color: #55ce69;
+}
+
+#login-btn{
+  width: 400px;
+  height: 50px;
+  border:none;
+  border-radius: 10px;
+  background-color: #55ce69;
+  color: white;
+  cursor: pointer;
+  margin-bottom:25px;
+  font-size: 25px;
+}
+
+p{
+  color: white;
+  font-size: 22px;
+}
+
+h1{
+  color: white;
+  margin:40px 0 20px ;
+}
+
+hr{
+  margin: 0;
+  padding: 0;
+  width: 75%;
+}
+  
